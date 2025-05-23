@@ -36,7 +36,7 @@ class Solution(object):
 - Space  O(n + k)
 
 ## Solution2 : Bucket Sort
-- Create freqTable = [[], [], [], [], [], ...], which is [[] * (n+1)]
+- Create freqTable = [[ ], [ ], [ ], [ ], [ ], ...], which is [[ ] * (n+1)]
 - Perform bucket sort : index = frequency, value = number
 ```python
 class Solution(object):
@@ -62,3 +62,5 @@ class Solution(object):
                     return res
         return []
 ```
+Time : O(n)
+Space : O(n)
