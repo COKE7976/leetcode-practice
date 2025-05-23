@@ -1,5 +1,5 @@
 # Problem : 1. Two Sum
-Link : 
+Link : [https://leetcode.com/problems/two-sum/description/](https://leetcode.com/problems/two-sum/description/)
 
 ## Solution : Hash Table
 - Key : Numbers in input list
