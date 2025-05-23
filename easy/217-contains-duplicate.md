@@ -3,7 +3,7 @@
 
 ---
 
-## Solution1 : HashSet
+## Solution1 : Hash Set
 
 ```python
 class Solution(object):
@@ -21,7 +21,7 @@ class Solution(object):
         return False
 ```
 
-## Solution2 : Length of HashSet
+## Solution2 : Length of Hash Set
 
 ```python
 class Solution(object):
