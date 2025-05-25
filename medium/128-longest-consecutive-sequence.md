@@ -3,9 +3,9 @@
 # Solution1 : Hash Set
 - Put all the numbers into a set
 - Iterate through the set
-  - Next loop if (n - 1) in the set
+  - Go to next loop if (n - 1) in the set
   - Count the length of consecutive sequence starting from n
-  - Update the result if length > result
+  - Update the result if needed
 ```python
 class Solution(object):
     def longestConsecutive(self, nums):
