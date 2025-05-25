@@ -26,5 +26,5 @@ class Solution(object):
                 ord('A') <= ord(c) <= ord('Z') or
                 ord('0') <= ord(c) <= ord('9'))
 ```
-Time : O(n)
-Space : O(1)
+- Time : O(n)
+- Space : O(1)
