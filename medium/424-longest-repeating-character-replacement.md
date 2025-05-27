@@ -26,5 +26,32 @@ class Solution(object):
                 res = max(res, r - l + 1)
         return res
 ```
-- Time : O(m * n), m characters
-- Space : O(m), m characters
+- Time : O(m * n), m distinct characters
+- Space : O(m), m distinct characters
+
+## Solution2 : Sliding Window Optimal Version
+- Keep track of the number of the most frequent character
+> I personally don't get it that, why a stale `maxFreq` can work (not updating it when left pointer moves..)
+```python
+class Solution(object):
+    def characterReplacement(self, s, k):
+        """
+        :type s: str
+        :type k: int
+        :rtype: int
+        """
+        cCount = {}
+        maxFreq = 0
+        res = 0
+        l = 0
+        for r in range(len(s)):
+            cCount[s[r]] = 1 + cCount.get(s[r], 0)
+            maxFreq = max(maxFreq, cCount[s[r]])
+            while (r - l + 1) - maxFreq > k:
+                cCount[s[l]] -= 1
+                l += 1
+            res = max(res, r - l + 1)
+        return res
+```
+- Time : O(n)
+- Space : O(m), m distinct characters
