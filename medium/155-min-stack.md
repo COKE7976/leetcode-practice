@@ -3,7 +3,7 @@ Link : [https://leetcode.com/problems/min-stack/description/](https://leetcode.c
 
 ## Solution1 : Two Stacks
 - One as usual stack
-- The other one is the min stack, which keeps the minimum number seen so far
+- The other one is the min stack, which keeps the minimum value seen so far
 ```python
 class MinStack(object):
 
@@ -38,4 +38,7 @@ class MinStack(object):
         """
         return self.minStack[-1]
 ```
+- Time : O(1)
+- Space : O(n)
 
+## Solution2 : Stack + Differential Storage
