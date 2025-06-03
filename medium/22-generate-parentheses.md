@@ -30,7 +30,5 @@ class Solution(object):
         backtrack(0, 0)
         return res
 ```
-- Time : $$
-\mathcal{O}\left(\frac{4^n}{\sqrt{n}}\right)
-$$
+- Time : O(4ⁿ / √n)
 - Space : O(n)
