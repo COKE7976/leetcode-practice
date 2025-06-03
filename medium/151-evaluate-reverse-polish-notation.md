@@ -2,8 +2,8 @@
 Link : [https://leetcode.com/problems/evaluate-reverse-polish-notation/description/](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/)
 
 ## Solution : Stack
-- Number - push
-- Operand - pop two numbers, perform the operation, push back the result
+- Operand - push
+- Operator - pop two numbers, perform the operation, push back the result
 
 ```python
 class Solution(object):
