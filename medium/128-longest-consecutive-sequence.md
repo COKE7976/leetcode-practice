@@ -1,4 +1,5 @@
 # Problem : 128. Longest Consecutive Sequence
+Link : [https://leetcode.com/problems/longest-consecutive-sequence/](https://leetcode.com/problems/longest-consecutive-sequence/)
 
 # Solution1 : Hash Set
 - Put all the numbers into a set
