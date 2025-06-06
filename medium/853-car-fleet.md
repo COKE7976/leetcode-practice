@@ -1,6 +1,8 @@
 # Problem : 853. Car Fleet
 Link : [https://leetcode.com/problems/car-fleet/description/](https://leetcode.com/problems/car-fleet/description/)
 
+[ Fleet ] A fleet is a group of one or more cars that reach the target together
+
 ## Solution1 : Iteration
 - Iterate through the cars by their positions, starting from the one closest to the target
 - A new fleet forms when the current car takes more time to reach the target than the car ahead
