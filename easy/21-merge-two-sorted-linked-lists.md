@@ -27,5 +27,5 @@ class Solution(object):
         node.next = list1 or list2
         return dummy.next
 ```
-Time : O(n + m)
-Space : O(1)
+- Time : O(n + m)
+- Space : O(1)
