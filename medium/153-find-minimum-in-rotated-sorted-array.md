@@ -2,7 +2,9 @@
 Link : [https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)
 
 ## Solution : Binary Search
-
+- Use binary search to iteratively check the current window, the window starting from the whole list
+    - If the left most point is less than the right most point, update result, end iteration
+    - Since the above condition not satisfied, if middle point is greater than the left most point, go check the right window
 ```python
 class Solution(object):
     def findMin(self, nums):
