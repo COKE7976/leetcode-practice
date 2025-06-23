@@ -2,7 +2,9 @@
 Link : [https://leetcode.com/problems/search-in-rotated-sorted-array/description/](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)
 
 ## Solution : Binary Search
-
+- Binary search, when having the middle point
+    - Check if it's the left or the right window is in ascending order, go for the ascending order one
+        - Check if the target is within or outside the window in ascending order
 ```python
 class Solution(object):
     def search(self, nums, target):
