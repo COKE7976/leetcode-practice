@@ -20,3 +20,5 @@ class Solution(object):
             head.next, prev, head = prev, head, head.next
         return prev
 ```
+- Time : O(n)
+- Space : O(1)
