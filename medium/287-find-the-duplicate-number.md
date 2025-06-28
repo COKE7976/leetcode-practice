@@ -2,6 +2,7 @@
 Link : [https://leetcode.com/problems/find-the-duplicate-number/description/](https://leetcode.com/problems/find-the-duplicate-number/description/)
 
 ## Solution : Floyd's Tortoise and Hare algorithm
+- Treat the list as a linked list where the value can be the index of the next node
 ```python
 class Solution(object):
     def findDuplicate(self, nums):
