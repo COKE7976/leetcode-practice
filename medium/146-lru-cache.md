@@ -53,6 +53,7 @@ class LRUCache(object):
         """
         if key in self.cache:
             self.remove(self.cache[key])
+            del self.cache[key]
         self.cache[key] = Node(key, value)
         self.insert(self.cache[key])
 
