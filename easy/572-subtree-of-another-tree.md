@@ -35,9 +35,4 @@ class Solution(object):
         return False
 ```
 - Time : O(n * m), n nodes in root, m nodes in subRoot
-- Space : O(n + m)  
-O(n)  ← from isSubtree recursion  
-+   
-O(m)  ← from sameTree recursion  
-=  
-O(n + m)  
+- Space : O(n + m)
