@@ -30,7 +30,7 @@ class Solution(object):
 
 ## Solution2 : DFS in Iteration
 - Post-order traversal : left -> right -> node
-    - Since using current node to check if it has right node to visit, so, need to keep track of the last visited node to determine if going to right node or current node
+    - Since we use the current node to decide whether to visit its right child or process the node itself, we need to track the last visited node to determine if the right child has already been visited.
 ```python
 # Definition for a binary tree node.
 # class TreeNode(object):
