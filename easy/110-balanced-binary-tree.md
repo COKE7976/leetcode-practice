@@ -31,5 +31,43 @@ class Solution(object):
 ## Solution2 : DFS in Iteration
 - Post-order traversal : left -> right -> node
 ```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution(object):
+    def isBalanced(self, root):
+        """
+        :type root: Optional[TreeNode]
+        :rtype: bool
+        """
+        stack = []
+        depth = {}
+        node = root
+        last = None
 
+        while stack or node:
+            if node:
+                stack.append(node)
+                node = node.left
+            else:
+                node = stack[-1]
+                if node.right and last != node.right:
+                    node = node.right
+                else:
+                    stack.pop()
+
+                    left = depth.get(node.left, 0)
+                    right = depth.get(node.right, 0)
+
+                    if abs(left - right) > 1:
+                        return False
+                    
+                    depth[node] = 1 + max(left, right)
+                    last = node
+                    node = None
+        
+        return True
 ```
