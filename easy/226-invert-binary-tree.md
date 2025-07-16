@@ -1,36 +1,7 @@
 # Problem : 226. Invert Binary Tree
 Link : [https://leetcode.com/problems/invert-binary-tree/description/](https://leetcode.com/problems/invert-binary-tree/description/)
 
-## Solution1 : BFS using Double Ended Queue
-- deque() only in Python3
-- BFS: explores a binary tree level by level
-```python
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
-class Solution:
-    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        if not root:
-            return None
-        
-        queue = deque([root])
-        while queue:
-            node = queue.popleft()
-            node.left, node.right = node.right, node.left
-            if node.left:
-                queue.append(node.left)
-            if node.right:
-                queue.append(node.right)
-        
-        return root
-```
-- Time : O(n)
-- Space : O(n)
-
-## Solution2 : DFS in Recursion
+## Solution1 : DFS in Recursion
 - DFS: explores a binary tree by going as deep as possible along each branch before backtracking
 ```python
 # Definition for a binary tree node.
@@ -58,7 +29,7 @@ class Solution(object):
 - Time : O(n)
 - Space : O(n)
 
-## Solution3 : DFS in Iteration
+## Solution2 : DFS in Iteration
 ```python
 # Definition for a binary tree node.
 # class TreeNode(object):
