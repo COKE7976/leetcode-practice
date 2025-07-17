@@ -47,15 +47,15 @@ class Solution(object):
         :type q: TreeNode
         :rtype: TreeNode
         """
-        cur = root
+        node = root
 
-        while cur:
-            if min(p.val, q.val) > cur.val:
-                cur = cur.right
-            elif max(p.val, q.val) < cur.val:
-                cur = cur.left
+        while node:
+            if max(p.val, q.val) < node.val:
+                node = node.left
+            elif min(p.val, q.val) > node.val:
+                node = node.right
             else:
-                return cur
+                return node
 ```
 - Time : O(h)
 - Space : O(1)
