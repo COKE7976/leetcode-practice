@@ -42,7 +42,7 @@ class Solution(object):
 
         current = maxWeight
         while current:
-            if current > 0 and bucket[current] % 2 == 0:
+            if current > 0 and bucket[current] % 2 == 0: # if the bucket contains even number, meets the condition that x == y, so smash (skip) the stones
                 current -= 1
                 continue
             
