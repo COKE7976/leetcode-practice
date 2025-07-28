@@ -37,13 +37,13 @@ class Twitter(object):
             if followeeId in self.tweetMap:
                 index = len(self.tweetMap[followeeId]) - 1
                 count, tweetId = self.tweetMap[followeeId][index]
-                heapq.heappush(minHeap, [count, tweetId, followeeId, index - 1]) # keep track of the index
+                heapq.heappush(minHeap, [count, tweetId, followeeId, index]) # keep track of the index
         
         while minHeap and len(res) < 10:
             count, tweetId, followeeId, index = heapq.heappop(minHeap)
             res.append(tweetId)
-            if index >= 0: # if the followee has more tweetId, push it back to the minHeap
-                count, tweetId = self.tweetMap[followeeId][index]
+            if index > 0: # if the followee has more tweetId, push it back to the minHeap
+                count, tweetId = self.tweetMap[followeeId][index - 1]
                 heapq.heappush(minHeap, [count, tweetId, followeeId, index - 1])
         
         return res
