@@ -31,7 +31,7 @@ class Twitter(object):
         """
         res = []
         minHeap = []
-        self.followMap[userId].add(userId)
+        self.followMap[userId].add(userId) # add self into follow list to walk through self as well
 
         for followeeId in self.followMap[userId]:
             if followeeId in self.tweetMap:
