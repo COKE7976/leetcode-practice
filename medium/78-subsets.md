@@ -1,6 +1,5 @@
 # Problem : 78. Subsets
 Link : [https://leetcode.com/problems/subsets/description/](https://leetcode.com/problems/subsets/description/)
-
 ## Solution : Backtracking
 ```python
 class Solution(object):
@@ -27,3 +26,19 @@ class Solution(object):
 ```
 - Time : O(n * $2^n$), $2^n$ subsets generated, O(n) to copy one final subset to res
 - Space : O(n)
+
+```plaintext
+dfs(0)
+|
+|-- include 1 → subset = [1]
+|   |
+|   |-- include 2 → subset = [1, 2] → add [1, 2] to res
+|   |
+|   |-- exclude 2 → subset = [1] → add [1] to res
+|
+|-- exclude 1 → subset = []
+    |
+    |-- include 2 → subset = [2] → add [2] to res
+    |
+    |-- exclude 2 → subset = [] → add [] to res
+```
