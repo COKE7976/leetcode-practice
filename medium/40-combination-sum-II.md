@@ -66,5 +66,5 @@ class Solution(object):
         dfs(0, [], 0)
         return res
 ```
-- Time : O(n * $2^n$), two branch recursion
+- Time : O(n * $2^n$)
 - Space : O(n)
