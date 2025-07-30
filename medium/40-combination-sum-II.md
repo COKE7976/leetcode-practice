@@ -36,3 +36,35 @@ class Solution(object):
 ```
 - Time : O(n * $2^n$), two branch recursion
 - Space : O(n)
+
+## Solution2 : Backtracking Optimal Ver
+```python
+class Solution(object):
+    def combinationSum2(self, candidates, target):
+        """
+        :type candidates: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
+        res = []
+        candidates.sort()
+
+        def dfs(idx, curr, total):
+            if total == target:
+                res.append(curr[:])
+                return
+            for i in range(idx, len(candidates)):
+                if i > idx and candidates[i] == candidates[i - 1]:
+                    continue
+                if total + candidates[i] > target:
+                    break
+
+                curr.append(candidates[i])
+                dfs(i + 1, curr, total + candidates[i])
+                curr.pop()
+
+        dfs(0, [], 0)
+        return res
+```
+- Time : O(n * $2^n$), two branch recursion
+- Space : O(n)
