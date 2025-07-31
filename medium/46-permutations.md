@@ -1,5 +1,6 @@
 # Problem : 46. Permutations
 Link : [https://leetcode.com/problems/permutations/description/](https://leetcode.com/problems/permutations/description/)
+## Solution1 : Recursion
 ```plaintext
 input : [1, 2, 3]
 logic : add the last digit, insert it in each possible position to make all the possible combinations
@@ -8,7 +9,6 @@ logic : add the last digit, insert it in each possible position to make all the 
 [[2,3],[3,2]]
 [[1,2,3],[2,1,3],[2,3,1],[1,3,2],[3,1,2],[3,2,1]]]
 ```
-## Solution1 : Recursion
 ```python
 class Solution(object):
     def permute(self, nums):
