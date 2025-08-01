@@ -5,6 +5,7 @@ Link : [https://leetcode.com/problems/word-search/description/](https://leetcode
 - Iterate through all the nodes on the board as the start
 - Then go for four directions from that node
 - Keep doing the same thing, to see if one path matches the "word"
+- Use one hash set to keep track of the visited nodes
 ```python
 class Solution(object):
     def exist(self, board, word):
