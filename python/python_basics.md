@@ -9,5 +9,6 @@
 - stop = `None`, defaults to the beginning of the list
 
 `list.append(val)` appends `val` at the end  
-`list.insert(0, val` inserts `val` at the start  
-
+`list.insert(0, val)` inserts `val` at the start  
+`list.remove(val)` removes the first occurrence of `val`  
+`list.pop(index)` pops out the element in the position of `index`, `list.pop()` pops out the last element  
