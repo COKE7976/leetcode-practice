@@ -8,6 +8,6 @@
 - start = `None`, defaults to the end of the list  
 - stop = `None`, defaults to the beginning of the list
 
-`list.append(val)` append `val` at the end  
-`list.insert(0, val` insert `val` at the start  
+`list.append(val)` appends `val` at the end  
+`list.insert(0, val` inserts `val` at the start  
 
