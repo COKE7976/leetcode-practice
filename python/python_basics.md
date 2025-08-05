@@ -11,4 +11,7 @@
 `list.append(val)` appends `val` at the end  
 `list.insert(0, val)` inserts `val` at the start  
 `list.remove(val)` removes the first occurrence of `val`  
-`list.pop(index)` pops out the element in the position of `index`, `list.pop()` pops out the last element  
+`list.pop(index)` pops out the element at index `index`, `list.pop()` pops out the last element  
+
+`del arr[1]` removes element at index 1  
+`del arr[1:3]` removes a slice (elements at index 1 & 2)  
