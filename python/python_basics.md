@@ -16,3 +16,10 @@
 
 `del arr[1]` removes element at index 1  
 `del arr[1:3]` removes a slice (elements at index 1 & 2)  
+
+# String
+```python
+nums = [1, 2, 3]
+string = "".join(str(n) for n in nums)
+print(string) # "123"
+```
