@@ -1,7 +1,7 @@
 # Math
 ```python
 print(-123 % 10)           # 7
-print(math.fmod(-123, 10)  # -3
+print(math.fmod(-123, 10))  # -3
 ```
 ```python
 print(10 / 2)   # 5.0
