@@ -31,6 +31,11 @@ nums.pop()      # Remove last element and return it
 nums.pop(1)     # Remove element at index 1
 nums.remove(3)  # Remove the first occurrence of value 3
 ```
+```python
+min(nums)
+max(nums)
+sum(nums)
+```
 
 # Sort
 ```python
