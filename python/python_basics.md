@@ -4,8 +4,9 @@ print(-123 % 10)            # 7
 print(math.fmod(-123, 10))  # -3
 ```
 ```python
-print(10 / 2)   # 5.0
-print(10 // 2)  # 5
+print(10 / 2)       # 5.0
+print(int(10 / 2))  # 5
+print(10 // 2)      # 5
 ```
 ```python
 print(2 ** 2)  # 4
