@@ -138,13 +138,16 @@ myset = set()
 or
 myset = {1, 2, 3}
 
-myset.add(4)       # {1, 2, 3, 4}
-myset.remove(2)    # Removes 2, error if not found
-myset.discard(99)  # No error if 99 not in set
+myset.add(4)         # {1, 2, 3, 4}
+myset.remove(2)      # Removes 2, error if not found
+myset.discard(99)    # No error if 99 not in set
+
+if 3 in myset:
+    print("Found!")  # Found!
 ```
 ```python
 nums = [1, 2, 2, 3, 3]
-unique = set(nums)  # {1, 2, 3}
+unique = set(nums)   # {1, 2, 3}
 ```
 ```python
 a = {1, 2, 3}
