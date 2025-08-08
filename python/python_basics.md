@@ -131,3 +131,15 @@ s.replace("-", "")  # "abc"
 s = "banana"
 s.count("a")  # 3
 ```
+
+# Set
+```python
+# Init
+myset = set()
+or
+myset = {1, 2, 3}
+
+myset.add(4)       # {1, 2, 3, 4}
+myset.remove(2)    # Removes 2, error if not found
+myset.discard(99)  # No error if 99 not in set
+```
