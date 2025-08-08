@@ -196,5 +196,7 @@ from collections import Counter
 
 nums = [1, 1, 2, 3, 3, 3]
 count = Counter(nums)
+print(count[1])             # 2
+print(count[2])             # 1
 print(count[3])             # 3
 ```
