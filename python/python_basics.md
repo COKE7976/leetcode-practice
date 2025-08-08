@@ -157,3 +157,44 @@ a & b  # Intersection → {3}
 a | b  # Union        → {1, 2, 3, 4, 5}
 a - b  # Difference   → {1, 2}
 ```
+
+# HashMap
+```python
+mp = {}
+or
+mp = {'a': 1, 'b': 2}
+
+print(mp.keys())            # ['a', 'b']
+print(mp.values())          # [1, 2]
+```
+```python
+mp = {}
+mp["apple"] = 5
+mp["apple"] += 1
+print(mp["apple"])          # 6
+print(mp["banana"])         # KeyError if not exists
+print(mp.get("banana", 0))  # returns 0 if key doesn't exist
+
+mp.pop("apple", None)       # returns None if key doesn't exist, otherwise returns the value of key "apple"
+
+if "apple" in mp:
+    print("Yes")            # Yes
+
+for key in mp:
+    print(key, mp[key])     # print out all the values
+
+for key, value in mp.items():
+    print(key, value)       # print out all the key - value pairs
+```
+```python
+mp = defaultdict(int)       # gives default value when key not exists, default value can be a set, a list, ...
+print(mp["new_key"])        # 0
+mp.pop("not_seen", 0)       # returns 0, as dict.pop(), a defautlt value is needed when performing pop() in case the key does not exist
+```
+```python
+from collections import Counter
+
+nums = [1, 1, 2, 3, 3, 3]
+count = Counter(nums)
+print(count[3])             # 3
+```
