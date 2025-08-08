@@ -12,26 +12,26 @@ print(2 ** 2)  # 4
 ```
 
 # List
-`list[start:stop:step]`  
-`reverse_list = list[::-1]`  
-- start = `None`, defaults to the end of the list  
-- stop = `None`, defaults to the beginning of the list
-
-`list.append(val)` appends `val` at the end  
-`list.insert(0, val)` inserts `val` at the start  
-  
-`list.remove(val)` removes the first occurrence of `val`  
-`list.pop(index)` pops out the element at index `index`, `list.pop()` pops out the last element  
-
-`del arr[1]` removes element at index 1  
-`del arr[1:3]` removes a slice (elements at index 1 & 2)  
-
-# String
 ```python
-nums = [1, 2, 3]
-string = "".join(str(n) for n in nums)
-print(string) # "123"
+nums[0]   # First element
+nums[-1]  # Last element
+nums[-2]  # Last second element
 ```
+```python
+# list[start : stop : step], start defaults to the end when be None, stop defaults to the beginning when be None
+nums[1:3]    # [index_2, index_3]
+nums[::-1]   # Reversed list
+```
+```python
+nums.append(5)      # Add to end
+nums.insert(2, 99)  # Insert 99 at index 2
+```
+```python
+nums.pop()      # Remove last element and return it
+nums.pop(1)     # Remove element at index 1
+nums.remove(3)  # Remove the first occurrence of value 3
+```
+
 # Sort
 ```python
 nums = [3, 1, 4, 2]
@@ -76,4 +76,10 @@ my_dict = {'a': 3, 'b': 1, 'c': 2}
 # Convert to list of tuples and sort by value
 sorted_items = sorted(my_dict.items(), key=lambda x: x[1])
 print(sorted_items)  # [('b', 1), ('c', 2), ('a', 3)]
+```
+# String
+```python
+nums = [1, 2, 3]
+string = "".join(str(n) for n in nums)
+print(string) # "123"
 ```
