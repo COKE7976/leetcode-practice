@@ -166,6 +166,7 @@ mp = {'a': 1, 'b': 2}
 
 print(mp.keys())            # ['a', 'b']
 print(mp.values())          # [1, 2]
+print(mp.items())           # [(a, 1), (b, 2)]
 ```
 ```python
 mp = {}
