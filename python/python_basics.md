@@ -1,6 +1,6 @@
 # Math
 ```python
-print(-123 % 10)           # 7
+print(-123 % 10)            # 7
 print(math.fmod(-123, 10))  # -3
 ```
 ```python
