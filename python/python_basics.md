@@ -40,9 +40,9 @@ sum(nums)
 num = [1, 2, 3]
 num_copy = num[::]
 
-print(num_copy)       # [1, 2, 3]
-print(num_copy == num)     # True  (same values)
-print(num_copy is num)     # False (different objects)
+print(num_copy)         # [1, 2, 3]
+print(num_copy == num)  # True  (same values)
+print(num_copy is num)  # False (different objects)
 ```
 
 # Sort
