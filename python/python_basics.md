@@ -23,3 +23,48 @@ nums = [1, 2, 3]
 string = "".join(str(n) for n in nums)
 print(string) # "123"
 ```
+# Sort
+```python
+nums = [3, 1, 4, 2]
+
+# In-place sorting (modifies original list)
+nums.sort()
+print(nums)  # [1, 2, 3, 4]
+
+# Reversed order
+nums.sort(reverse=True)
+print(nums)  # [4, 3, 2, 1]
+```
+```python
+nums = [5, 2, 8, 1]
+
+sorted_nums = sorted(nums)
+print(sorted_nums)  # [1, 2, 5, 8]
+print(nums)         # [5, 2, 8, 1] — original is unchanged
+```
+```python
+words = ["banana", "apple", "cherry"]
+words.sort()
+print(words)  # ['apple', 'banana', 'cherry']
+```
+```python
+words = ["banana", "kiwi", "apple", "fig"]
+
+# Sort by length of each word
+words.sort(key=len)
+print(words)  # ['fig', 'kiwi', 'apple', 'banana']
+```
+```python
+intervals = [(1, 3), (2, 5), (0, 4)]
+
+# Sort by the second item in each tuple (end time)
+intervals.sort(key=lambda x: x[1])
+print(intervals)  # [(1, 3), (0, 4), (2, 5)]
+```
+```python
+my_dict = {'a': 3, 'b': 1, 'c': 2}
+
+# Convert to list of tuples and sort by value
+sorted_items = sorted(my_dict.items(), key=lambda x: x[1])
+print(sorted_items)  # [('b', 1), ('c', 2), ('a', 3)]
+```
