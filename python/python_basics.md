@@ -1,6 +1,15 @@
 # Math
-`math.fmod(-123, 10) = -3`, but `-123 % 10 = 7`  
-`/`, division always gives float output, so one can use `int(x / 10)` or `x // 10`  
+```python
+print(-123 % 10)           # 7
+print(math.fmod(-123, 10)  # -3
+```
+```python
+print(10 / 2)   # 5.0
+print(10 // 2)  # 5
+```
+```python
+print(2 ** 2)  # 4
+```
 
 # List
 `list[start:stop:step]`  
