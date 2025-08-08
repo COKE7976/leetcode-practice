@@ -104,7 +104,29 @@ print(sorted_items)  # [('b', 1), ('c', 2), ('a', 3)]
 ```
 # String
 ```python
+words = ['I', 'love', 'Python']
+sentence = ' '.join(words)  # "I love Python"
+```
+```python
 nums = [1, 2, 3]
 string = "".join(str(n) for n in nums)
-print(string) # "123"
+print(string)  # "123"
+```
+```python
+line = "apple,banana,grape"
+fruits = line.split(",")  # ['apple', 'banana', 'grape']
+```
+```python
+s = "abc123"
+s.isalpha()  # False, "a - z" or "A - Z" only
+s.isdigit()  # False, "0 - 9" only
+s.isalnum()  # True
+```
+```python
+s = "a-b-c"
+s.replace("-", "")  # "abc"
+```
+```python
+s = "banana"
+s.count("a")  # 3
 ```
