@@ -44,6 +44,18 @@ print(num_copy)         # [1, 2, 3]
 print(num_copy == num)  # True  (same values)
 print(num_copy is num)  # False (different objects)
 ```
+```python
+# Use deepcopy() to Fully Duplicate Nested Structures
+import copy
+
+original = [[1, 2], [3, 4]]
+deep = copy.deepcopy(original)
+
+deep[0][0] = 999
+
+print("Original:", original)  # [[1, 2], [3, 4]]
+print("Deep:", deep)          # [[999, 2], [3, 4]]
+```
 
 # Sort
 ```python
