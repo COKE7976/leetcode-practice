@@ -201,3 +201,36 @@ print(count[1])             # 2
 print(count[2])             # 1
 print(count[3])             # 3
 ```
+
+# Heap
+```python
+heap = [3, 1, 4, 1, 5]
+heapq.heapify(heap)             # time complexity = O(n)
+print(heap)                     # [1, 1, 4, 3, 5], internally rearranged as a min heap
+print(heap[0])                  # 1, the smallest
+
+heapq.heappush(heap, 3)         # push 3 into the min heap
+smallest = heapq.heappop(heap)  # removes and returns smallest
+print(smallest)                 # 1
+```
+```python
+arr = [7, 10, 4, 3, 20, 15]
+print(heapq.nsmallest(3, arr))  # [3, 4, 7]
+print(heapq.nlargest(3, arr))   # [20, 15, 10]
+```
+```python
+# build a max heap
+max_heap = []
+heapq.heappush(max_heap, -3)
+heapq.heappush(max_heap, -1)
+heapq.heappush(max_heap, -2)
+
+print(-heapq.heappop(max_heap))  # 3
+```
+```python
+# heap sort, time complexity O(nlogn)
+arr = [3, 1, 4, 1, 5]
+heapq.heapify(arr)
+sorted_arr = [heapq.heappop(arr) for _ in range(len(arr))]
+print(sorted_arr)  # [1, 1, 3, 4, 5]
+```
