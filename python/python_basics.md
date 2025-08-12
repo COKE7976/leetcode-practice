@@ -232,5 +232,5 @@ print(-heapq.heappop(max_heap))     # 3
 arr = [3, 1, 4, 1, 5]
 heapq.heapify(arr)
 sorted_arr = [heapq.heappop(arr) for _ in range(len(arr))]
-print(sorted_arr)  # [1, 1, 3, 4, 5]
+print(sorted_arr)                   # [1, 1, 3, 4, 5]
 ```
