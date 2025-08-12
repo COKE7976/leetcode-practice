@@ -234,3 +234,25 @@ heapq.heapify(arr)
 sorted_arr = [heapq.heappop(arr) for _ in range(len(arr))]
 print(sorted_arr)                   # [1, 1, 3, 4, 5]
 ```
+
+# Double Ended Queue
+```python
+dq = deque()                 # empty
+or
+dq = deque([1, 2, 3])        # from iterable
+
+dq.append(4)                 # add to right: [1, 2, 3, 4]
+dq.appendleft(0)             # add to left:  [0, 1, 2, 3, 4]
+
+dq.pop()                     # remove from right, returns last element
+dq.popleft()                 # remove from left, returns first element
+
+left = dq[0]                 # first element
+right = dq[-1]               # last element
+```
+```python
+# fixed size (old items removed automatically)
+dq = deque(maxlen=3)
+dq.extend([1, 2, 3])
+dq.append(4)   # deque now [2, 3, 4] (1 was dropped automatically)
+```
