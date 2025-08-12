@@ -204,19 +204,19 @@ print(count[3])             # 3
 
 # Heap
 ```python
-heap = [3, 1, 4, 1, 5]
-heapq.heapify(heap)             # time complexity = O(n)
-print(heap)                     # [1, 1, 4, 3, 5], internally rearranged as a min heap
-print(heap[0])                  # 1, the smallest
+min_heap = [3, 1, 4, 1, 5]
+heapq.heapify(min_heap)             # time complexity = O(n)
+print(min_heap)                     # [1, 1, 4, 3, 5], internally rearranged as a min heap
+print(min_heap[0])                  # 1, the smallest
 
-heapq.heappush(heap, 3)         # push 3 into the min heap
-smallest = heapq.heappop(heap)  # removes and returns smallest
-print(smallest)                 # 1
+heapq.heappush(min_heap, 3)         # push 3 into the min heap
+smallest = heapq.heappop(min_heap)  # removes and returns smallest
+print(smallest)                     # 1
 ```
 ```python
 arr = [7, 10, 4, 3, 20, 15]
-print(heapq.nsmallest(3, arr))  # [3, 4, 7]
-print(heapq.nlargest(3, arr))   # [20, 15, 10]
+print(heapq.nsmallest(3, arr))      # [3, 4, 7]
+print(heapq.nlargest(3, arr))       # [20, 15, 10]
 ```
 ```python
 # build a max heap
@@ -225,7 +225,7 @@ heapq.heappush(max_heap, -3)
 heapq.heappush(max_heap, -1)
 heapq.heappush(max_heap, -2)
 
-print(-heapq.heappop(max_heap))  # 3
+print(-heapq.heappop(max_heap))     # 3
 ```
 ```python
 # heap sort, time complexity O(nlogn)
