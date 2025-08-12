@@ -253,6 +253,6 @@ right = dq[-1]               # last element
 ```python
 # fixed size (old items removed automatically)
 dq = deque(maxlen=3)
-dq.extend([1, 2, 3])
-dq.append(4)   # deque now [2, 3, 4] (1 was dropped automatically)
+dq.extend([1, 2, 3])         # add multiple to right
+dq.append(4)                 # deque now [2, 3, 4] (1 was dropped automatically)
 ```
