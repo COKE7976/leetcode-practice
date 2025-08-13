@@ -19,23 +19,23 @@ print(2 ** 2)               # 4
 
 # List
 ```python
-nums[0]   # First element
-nums[-1]  # Last element
-nums[-2]  # Last second element
+nums[0]              # First element
+nums[-1]             # Last element
+nums[-2]             # Last second element
 ```
 ```python
 # list[start : stop : step], start defaults to the end when be None, stop defaults to the beginning when be None
-nums[1:3]    # [index_2, index_3]
-nums[::-1]   # Reversed list
+nums[1:3]            # [index_2, index_3]
+nums[::-1]           # Reversed list
 ```
 ```python
-nums.append(5)      # Add to end
-nums.insert(2, 99)  # Insert 99 at index 2
+nums.append(5)       # Add to end
+nums.insert(2, 99)   # Insert 99 at index 2
 ```
 ```python
-nums.pop()      # Remove last element and return it
-nums.pop(1)     # Remove element at index 1
-nums.remove(3)  # Remove the first occurrence of value 3
+nums.pop()           # Remove last element and return it
+nums.pop(1)          # Remove element at index 1
+nums.remove(3)       # Remove the first occurrence of value 3
 ```
 ```python
 min(nums)
@@ -46,9 +46,9 @@ sum(nums)
 num = [1, 2, 3]
 num_copy = num[::]
 
-print(num_copy)         # [1, 2, 3]
-print(num_copy == num)  # True  (same values)
-print(num_copy is num)  # False (different objects)
+print(num_copy)               # [1, 2, 3]
+print(num_copy == num)        # True  (same values)
+print(num_copy is num)        # False (different objects)
 ```
 ```python
 # Use deepcopy() to Fully Duplicate Nested Structures
