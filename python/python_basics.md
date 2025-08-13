@@ -4,12 +4,17 @@ print(-123 % 10)            # 7
 print(math.fmod(-123, 10))  # -3
 ```
 ```python
-print(10 / 2)       # 5.0
-print(int(10 / 2))  # 5
-print(10 // 2)      # 5
+print(10 / 2)               # 5.0
+print(int(10 / 2))          # 5
+print(10 // 2)              # 5
 ```
 ```python
-print(2 ** 2)  # 4
+print(2 ** 2)               # 4
+```
+```python
+import math
+print(math.gcd(8, 12))      # 4, highest common factor
+print(math.lcm(8, 12))      # 24, least common multiple
 ```
 
 # List
