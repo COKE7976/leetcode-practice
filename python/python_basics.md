@@ -237,6 +237,7 @@ print(sorted_arr)                   # [1, 1, 3, 4, 5]
 
 # Double Ended Queue
 ```python
+from collections import deque
 dq = deque()                 # empty
 or
 dq = deque([1, 2, 3])        # from iterable
@@ -249,6 +250,10 @@ dq.popleft()                 # remove from left, returns first element
 
 left = dq[0]                 # first element
 right = dq[-1]               # last element
+```
+```python
+dq.rotate(2)   # move last 2 elements to the front, [1, 2, 3, 4, 5] --> [4, 5, 1, 2, 3]
+dq.rotate(-1)  # move first element to the end, [1, 2, 3, 4, 5] --> [2, 3, 4, 5, 1]
 ```
 ```python
 # fixed size (old items removed automatically)
