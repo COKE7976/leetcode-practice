@@ -252,8 +252,11 @@ left = dq[0]                 # first element
 right = dq[-1]               # last element
 ```
 ```python
-dq.rotate(2)   # move last 2 elements to the front, [1, 2, 3, 4, 5] --> [4, 5, 1, 2, 3]
-dq.rotate(-1)  # move first element to the end, [1, 2, 3, 4, 5] --> [2, 3, 4, 5, 1]
+dq.rotate(2)                 # move last 2 elements to the front, [1, 2, 3, 4, 5] --> [4, 5, 1, 2, 3]
+dq.rotate(-1)                # move first element to the end, [1, 2, 3, 4, 5] --> [2, 3, 4, 5, 1]
+```
+```python
+dq.remove(3)                 # removes first matching element
 ```
 ```python
 # fixed size (old items removed automatically)
