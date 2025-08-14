@@ -270,7 +270,7 @@ dq.extend([1, 2, 3])         # add multiple to right
 dq.append(4)                 # deque now [2, 3, 4] (1 was dropped automatically)
 ```
 
-# Others
+# any & all
 ```python
 any([0, False, 5])             # True  (because 5 is truthy)
 any([0, False, None])          # False (no truthy values)
@@ -284,4 +284,8 @@ all([1, "", 3])                # False ("" is falsy)
 
 nums = [2, 4, 6]
 all(n % 2 == 0 for n in nums)  # True
+```
+```python
+any([])                        # False
+all([])                        # True, vacuously true
 ```
