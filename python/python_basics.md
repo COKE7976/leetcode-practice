@@ -269,3 +269,19 @@ dq = deque(maxlen=3)
 dq.extend([1, 2, 3])         # add multiple to right
 dq.append(4)                 # deque now [2, 3, 4] (1 was dropped automatically)
 ```
+
+# Others
+```python
+any([0, False, 5])             # True  (because 5 is truthy)
+any([0, False, None])          # False (no truthy values)
+
+nums = [1, 2, 3]
+any(n > 2 for n in nums)       # True
+```
+```python
+all([1, "hello", [1]])         # True (all truthy)
+all([1, "", 3])                # False ("" is falsy)
+
+nums = [2, 4, 6]
+all(n % 2 == 0 for n in nums)  # True
+```
