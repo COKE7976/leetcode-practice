@@ -25,7 +25,8 @@ nums[-2]             # Last second element
 ```
 ```python
 # list[start : stop : step], start defaults to the end when be None, stop defaults to the beginning when be None
-nums[1:3]            # [index_2, index_3]
+nums = [0, 1, 2, 3, 4]
+nums[1:3]            # [1, 2]
 nums[::-1]           # Reversed list
 ```
 ```python
