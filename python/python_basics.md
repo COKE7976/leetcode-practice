@@ -135,7 +135,12 @@ s.replace("-", "")  # "abc"
 ```
 ```python
 s = "banana"
-s.count("a")  # 3
+s.count("a")        # 3
+```
+```python
+s = "aBc"
+print(s.lower())    # abc
+print(s.upper())    # ABC
 ```
 
 # Set
