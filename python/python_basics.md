@@ -16,6 +16,13 @@ print(10 // 2)              # 5
 ```python
 print(2 ** 2)               # 4
 ```
+```python
+print(math.floor(3.14))     # 3
+print(math.floor(-3.14))    # -4
+
+print(math.ceil(3.14))     # 4
+print(math.ceil(-3.14))    # -3
+```
 
 # List
 ```python
