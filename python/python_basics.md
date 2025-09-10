@@ -119,7 +119,8 @@ print(sorted_items)  # [('b', 1), ('c', 2), ('a', 3)]
 # String
 ```python
 words = ['I', 'love', 'Python']
-sentence = ' '.join(words)  # "I love Python"
+sentence1 = ' '.join(words)  # "I love Python"
+sentence2 = ','.join(words)  # "I,love,Python"
 ```
 ```python
 nums = [1, 2, 3]
