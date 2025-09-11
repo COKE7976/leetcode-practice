@@ -22,6 +22,9 @@ print(math.floor(-3.14))    # -4
 
 print(math.ceil(3.14))      # 4
 print(math.ceil(-3.14))     # -3
+
+print(math.trunc(3.14))     # 3
+print(math.trunc(-3.14))    # -3
 ```
 
 # List
