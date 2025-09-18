@@ -198,7 +198,9 @@ print(mp["apple"])          # 6
 print(mp["banana"])         # KeyError if not exists
 print(mp.get("banana", 0))  # returns 0 if key doesn't exist
 
+# key removing
 mp.pop("apple", None)       # returns None if key doesn't exist, otherwise returns the value of key "apple"
+del mp["apple"]             # needs to make sure the key "apple" exists, otherwise raising KeyError 
 
 if "apple" in mp:
     print("Yes")            # Yes
