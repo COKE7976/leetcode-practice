@@ -308,3 +308,11 @@ all(n % 2 == 0 for n in nums)  # True
 any([])                        # False
 all([])                        # True, vacuously true
 ```
+
+# Random
+```python
+import random
+
+print(random.choice([1, 2, 3]))    # randomly pick a number from 1, 2 and 3
+print(random.randint(1, 10))       # randomly pick a number from 1 to 10
+```
